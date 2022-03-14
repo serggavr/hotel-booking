@@ -12,7 +12,7 @@
   <body class="body">
     <div class="page">
       <header class="header">
-        <h1 class="header__logo">HotelBooking</h1>
+        <h2 class="header__logo">HotelBooking</h2>
         <nav>
           <ul class="header__menu">
             <lu><a href="#" class="header__menu-item">Дома</a></lu>
@@ -20,11 +20,43 @@
             <lu><a href="#" class="header__menu-item">Контакты</a></lu>
           </ul>
         </nav>
-        <form action="index.html">
-          <button class="header__purchase-button">Бронировать</button>
+        <form class="purchase" action="index.html">
+          <button class="purchase__button">Бронировать</button>
         </form>
       </header>
-      <main class="content"></main>
+      <main class="content">
+        <section class="first">
+          <div class="first__text-block">
+            <h1 class="first__title">Аренда загородного дома для отдыха</h1>
+            <p class="first__offer-text">
+              Самые выгодные предложения по аренде коттеджей и загородных домов
+              в Москве и области
+            </p>
+            <form class="purchase" action="index.html">
+              <button class="purchase__button purchase__button_placed-first">
+                Бронирование
+              </button>
+            </form>
+          </div>
+          <div class="first__images-block">
+            <img
+              src="./images/first/first__images-block_1.jpg"
+              alt="левая часть загородного дома"
+              class="first__image"
+            />
+            <img
+              src="./images/first/first__images-block_2.jpg"
+              alt="средня часть загородного дома"
+              class="first__image"
+            />
+            <img
+              src="./images/first/first__images-block_3.jpg"
+              alt="правая часть загородного дома"
+              class="first__image"
+            />
+          </div>
+        </section>
+      </main>
       <footer class="footer"></footer>
     </div>
   </body>
