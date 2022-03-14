@@ -1,0 +1,57 @@
+.body {
+  background-color: #fff;
+}
+
+.page {
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.header {
+  margin: 37px 125px 35px 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #192252;
+}
+
+.header__logo {
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.header__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 36px;
+}
+
+.header__menu-item {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+.header__purchase-button {
+  width: 136px;
+  height: 47px;
+  padding: 14px 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #0e1734;
+  color: #fff;
+  cursor: pointer;
+}
