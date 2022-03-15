@@ -288,7 +288,8 @@
 }
 
 .about-us {
-  margin: 80px 120px 80px 120px;
+  padding-top: 80px;
+  margin: 0 120px 80px 120px;
   display: flex;
   flex-direction: row;
   column-gap: 126px;
@@ -324,4 +325,69 @@
   font-size: 18px;
   line-height: 27px;
   color: #848fac;
+}
+
+@media (max-width: 1340px) {
+  .about-us {
+    padding-top: 60px;
+    margin: 0 90px 60px 90px;
+    column-gap: 10%;
+  }
+  .about-us__title {
+    max-width: 400px;
+    font-size: 27px;
+    line-height: 40px;
+  }
+
+  .about-us__offer-text {
+    max-width: 396px;
+    margin: 28px 0 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 1072px) {
+  .about-us {
+    padding-top: 30px;
+    margin: 0 60px 32px 60px;
+  }
+
+  .about-us__image {
+    max-width: 288px;
+    max-height: 432px;
+  }
+}
+
+@media (max-width: 886px) {
+  .about-us {
+    margin: 0 30px 32px 30px;
+  }
+  .about-us__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    margin: 0 18px 32px 18px;
+    column-gap: 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-us {
+    margin: 0 10px 32px 10px;
+    flex-direction: column;
+    row-gap: 18px;
+  }
+  .about-us__image {
+    max-width: 100%;
+    max-height: 100%;
+    order: 1;
+  }
+  .about-us__text-block {
+    align-self: flex-start;
+  }
 }
