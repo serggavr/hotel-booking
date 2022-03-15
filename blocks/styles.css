@@ -128,7 +128,8 @@
   margin: 80px 120px 80px 120px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  column-gap: 126px;
 }
 
 .about-us__image {
