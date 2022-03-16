@@ -120,6 +120,8 @@
   }
   .header__logo {
     margin-bottom: 18px;
+    font-size: 42px;
+    line-height: 48px;
   }
 }
 
@@ -185,15 +187,15 @@
     margin: 0 90px 64px 90px;
   }
   .first__title {
-    max-width: 350px;
-    font-size: 32px;
+    max-width: 415px;
+    font-size: 38px;
     line-height: 48px;
   }
   .first__offer-text {
     margin: 16px 0 0;
-    max-width: 325px;
-    font-size: 12px;
-    line-height: 18px;
+    max-width: 375px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .purchase__button_placed-first {
     margin-top: 40px;
@@ -206,8 +208,14 @@
     margin: 0 60px 32px 60px;
     column-gap: 16px;
   }
+  .first__title {
+    font-size: 32px;
+    line-height: 42px;
+  }
   .first__offer-text {
     margin: 12px 0 0;
+    font-size: 16px;
+    line-height: 22px;
   }
   .purchase__button_placed-first {
     margin-top: 30px;
@@ -222,13 +230,14 @@
     margin-top: 0;
   }
   .first__title {
-    max-width: 265px;
-    font-size: 24px;
+    max-width: 295px;
+    font-size: 27px;
     line-height: 36px;
   }
   .first__offer-text {
-    margin: 12px 0 0;
-    max-width: 254px;
+    max-width: 295px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .purchase__button_placed-first {
     margin-top: 30px;
@@ -250,12 +259,15 @@
     text-align: center;
   }
   .first__title {
-    max-width: 380px;
-    font-size: 32px;
-    line-height: 48px;
+    max-width: 459px;
+    font-size: 42px;
+    line-height: 64px;
   }
   .first__offer-text {
-    margin: 0 auto;
+    max-width: 375px;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 12px auto;
   }
 
   .purchase__button_placed-first {
@@ -285,27 +297,53 @@
     margin: 0 10px 32px 10px;
     column-gap: 5px;
   }
+  .first__title {
+    max-width: 360px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .first__offer-text {
+    max-width: 310px;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 12px auto;
+  }
 }
 
 .about-us {
   padding-top: 80px;
   margin: 0 120px 80px 120px;
+}
+
+.card {
   display: flex;
   flex-direction: row;
   column-gap: 126px;
 }
 
-.about-us__image {
+.card:not(:first-child) {
+  margin-top: 32px;
+}
+
+.card_direction_reverse {
+  justify-content: space-between;
+}
+
+.card__image {
   max-width: 384px;
   max-height: 576px;
 }
 
-.about-us__text-block {
+.card__image_direction_reverse {
+  order: 2;
+}
+
+.card__text-block {
   align-self: center;
   max-width: 690px;
 }
 
-.about-us__title {
+.card__title {
   margin: 0;
   font-family: "Montserrat";
   font-style: normal;
@@ -316,7 +354,7 @@
   color: #192252;
 }
 
-.about-us__offer-text {
+.card__offer-text {
   max-width: 584px;
   margin: 28px 0 0;
   font-family: "Inter";
@@ -331,19 +369,29 @@
   .about-us {
     padding-top: 60px;
     margin: 0 90px 60px 90px;
-    column-gap: 10%;
   }
-  .about-us__title {
-    max-width: 400px;
-    font-size: 27px;
+  .card {
+    column-gap: 18px;
+    justify-content: space-between;
+  }
+  .card__offer-text {
+    /* align-self: flex-end; */
+  }
+  .card__title {
+    max-width: 446px;
+    font-size: 32px;
     line-height: 40px;
   }
 
-  .about-us__offer-text {
-    max-width: 396px;
-    margin: 28px 0 0;
-    font-size: 12px;
-    line-height: 18px;
+  .card__offer-text {
+    max-width: 400px;
+    margin: 20px 0 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .card__image {
+    max-width: calc(45% - 18px);
+    height: 100%;
   }
 }
 
@@ -352,42 +400,104 @@
     padding-top: 30px;
     margin: 0 60px 32px 60px;
   }
-
-  .about-us__image {
-    max-width: 288px;
-    max-height: 432px;
+  .card__title {
+    max-width: 399px;
+    font-size: 27px;
+    line-height: 34px;
   }
+
+  .card__offer-text {
+    max-width: 370px;
+    margin: 20px 0 0;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  /* .about-us__image {
+    max-width: calc(40% - 18px);
+    max-height: 100%;
+  } */
 }
 
 @media (max-width: 886px) {
   .about-us {
     margin: 0 30px 32px 30px;
   }
-  .about-us__title {
-    font-size: 20px;
-    line-height: 30px;
+  .card__title {
+    max-width: 399px;
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 
 @media (max-width: 768px) {
   .about-us {
     margin: 0 18px 32px 18px;
-    column-gap: 18px;
   }
+  /* .card {
+    column-gap: 18px;
+  } */
+  .card__text-block {
+    /* min-width: 60%; */
+  }
+  /* .about-us__image {
+    max-width: calc(40% - 18px);
+    max-height: 100%;
+  } */
 }
 
 @media (max-width: 560px) {
   .about-us {
     margin: 0 10px 32px 10px;
+  }
+  .card {
     flex-direction: column;
     row-gap: 18px;
   }
-  .about-us__image {
+  .card__image {
     max-width: 100%;
     max-height: 100%;
     order: 1;
   }
-  .about-us__text-block {
+  .card__text-block {
     align-self: flex-start;
+  }
+}
+
+.benefit {
+  padding-top: 80px;
+  margin: 0 120px 80px 120px;
+  row-gap: 32px;
+}
+
+@media (max-width: 1340px) {
+  .benefit {
+    padding-top: 60px;
+    margin: 0 90px 60px 90px;
+  }
+}
+
+@media (max-width: 1072px) {
+  .benefit {
+    padding-top: 30px;
+    margin: 0 60px 32px 60px;
+  }
+}
+
+@media (max-width: 886px) {
+  .benefit {
+    margin: 0 30px 32px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefit {
+    margin: 0 18px 32px 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  .benefit {
+    margin: 0 10px 32px 10px;
   }
 }
