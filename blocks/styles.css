@@ -28,12 +28,10 @@
 }
 
 .purchase__button_placed-first {
-  margin-top: 59px;
   padding: 16px 32px;
 }
 
 .purchase__button_about-us {
-  margin-top: 17px;
   padding: 16px 32px;
 }
 
@@ -152,7 +150,7 @@
 }
 
 .first__offer-text {
-  margin: 24px 0 0;
+  margin: 24px 0 59px;
   max-width: 485px;
   font-family: "Inter";
   font-style: normal;
@@ -191,12 +189,9 @@
     font-size: 38px;
   }
   .first__offer-text {
-    margin: 16px 0 0;
+    margin: 16px 0 40px;
     max-width: 375px;
     font-size: 18px;
-  }
-  .purchase__button_placed-first {
-    margin-top: 40px;
   }
 }
 
@@ -210,11 +205,8 @@
     font-size: 32px;
   }
   .first__offer-text {
-    margin: 12px 0 0;
+    margin: 12px 0 30px;
     font-size: 16px;
-  }
-  .purchase__button_placed-first {
-    margin-top: 30px;
   }
 }
 
@@ -232,9 +224,6 @@
   .first__offer-text {
     max-width: 295px;
     font-size: 14px;
-  }
-  .purchase__button_placed-first {
-    margin-top: 30px;
   }
 }
 
@@ -258,13 +247,10 @@
   }
   .first__offer-text {
     max-width: 375px;
+    margin: 12px auto 18px;
     font-size: 18px;
-    margin: 12px auto;
   }
 
-  .purchase__button_placed-first {
-    margin: 18px auto 0 auto;
-  }
   .first__image {
     width: 100%;
   }
@@ -296,7 +282,6 @@
   .first__offer-text {
     max-width: 310px;
     font-size: 16px;
-    margin: 12px auto;
   }
 }
 
@@ -346,7 +331,7 @@
 
 .card__offer-text {
   max-width: 584px;
-  margin: 28px 0 0;
+  margin: 28px 0 17px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -364,9 +349,6 @@
     column-gap: 18px;
     justify-content: space-between;
   }
-  .card__offer-text {
-    /* align-self: flex-end; */
-  }
   .card__title {
     max-width: 446px;
     font-size: 32px;
@@ -374,7 +356,7 @@
 
   .card__offer-text {
     max-width: 400px;
-    margin: 20px 0 0;
+    margin: 20px 0 12px;
     font-size: 18px;
   }
   .card__image {
@@ -395,7 +377,6 @@
 
   .card__offer-text {
     max-width: 370px;
-    margin: 20px 0 0;
     font-size: 16px;
   }
 }
@@ -503,9 +484,8 @@
   position: relative;
 }
 
-.interior__slider {
+.switcher {
   grid-row: 1 / 4;
-  position: absolute;
   margin: 0;
   padding: 0;
   display: flex;
@@ -513,11 +493,18 @@
   align-items: center;
   gap: 12px;
   list-style: none;
+}
+
+.switcher_position_absolute {
+  position: absolute;
+}
+
+.switcher_placed_bottom-center {
   bottom: 4.7%;
   right: calc(50% - 36px);
 }
 
-.interior__slider-dot {
+.switcher__dot {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -527,11 +514,15 @@
   cursor: pointer;
   width: 8px;
   height: 8px;
-  background-color: #fff;
+  background-color: rgba(250, 176, 71, 0.35);
   border-radius: 50%;
 }
 
-.interior__slider-dot:checked {
+.switcher__dot_theme_light {
+  background-color: white;
+}
+
+.switcher__dot:checked {
   width: 12px;
   height: 12px;
   background-color: #fab047;
@@ -556,7 +547,483 @@
     grid-row: 1;
     grid-column: 1;
   }
-  .interior__slider {
+  .switcher_placed_bottom-center {
     display: none;
+  }
+}
+
+.reservation {
+  padding-top: 80px;
+  margin: 0 120px 80px 120px;
+  text-align: center;
+}
+
+.reservation__title {
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  color: #192252;
+}
+
+.reservation__offer-text {
+  max-width: 588px;
+  margin: 24px auto 32px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #848fac;
+}
+
+.reservation__cards {
+  margin: 88px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+}
+
+.product {
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
+  text-align: start;
+}
+
+.product__image {
+  width: 100%;
+}
+
+.product__text-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__title {
+  margin: 32px 0 0;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.product__offer-text {
+  margin: 16px 0 32px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #848fac;
+}
+
+.product__link {
+  margin-top: auto;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #424f7b;
+  text-decoration: none;
+}
+
+.product__link::after {
+  content: url("/images/product/product_stroke.svg");
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+@media (max-width: 1340px) {
+  .interior {
+    padding-top: 60px;
+  }
+  .interior__title {
+    font-size: 32px;
+  }
+  .reservation {
+    padding-top: 60px;
+    margin: 0 90px 60px 90px;
+  }
+  .reservation__title {
+    font-size: 32px;
+  }
+  .reservation__offer-text {
+    margin: 20px auto 30px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1072px) {
+  .interior {
+    padding-top: 30px;
+  }
+  .interior__title {
+    font-size: 27px;
+  }
+  .reservation {
+    padding-top: 30px;
+    margin: 0 60px 32px 60px;
+  }
+  .reservation__title {
+    font-size: 27px;
+  }
+  .reservation__offer-text {
+    font-size: 16px;
+  }
+  .reservation__cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .product {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .product__image {
+    grid-row: 1 / 3;
+  }
+  .product__link {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 886px) {
+  .interior__title {
+    font-size: 24px;
+  }
+  .reservation {
+    margin: 0 30px 32px 30px;
+  }
+  .reservation__title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reservation {
+    margin: 0 18px 32px 18px;
+  }
+  .reservation__cards {
+    gap: 48px;
+  }
+  .product {
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+    /* gap: 0; */
+  }
+  .product__image {
+    grid-row: 2 / 3;
+  }
+  .product__text-block {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    text-align: center;
+  }
+  .product__title {
+    margin: 0;
+  }
+  .product__offer-text {
+    margin-bottom: 24px;
+  }
+  .product__link {
+    margin-top: 0;
+    align-self: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .reservation {
+    margin: 0 10px 32px 10px;
+  }
+
+  .reservation__cards {
+    gap: 30px;
+  }
+
+  .product {
+    margin: 0 auto;
+    max-width: calc(100% - 32px);
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 0;
+  }
+
+  .product__image {
+    grid-row: 3;
+  }
+  .product__text-block {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .product__image {
+  }
+
+  .product__title {
+    margin-top: 24px;
+  }
+
+  .product__offer-text {
+    margin-bottom: 16px;
+  }
+  .product__link {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
+.reviews {
+  padding: 80px 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews__title {
+  max-width: 630px;
+  margin: 0 auto 62px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #192252;
+}
+
+.reviews__photo {
+  margin-bottom: 44px;
+  max-width: 120px;
+  object-fit: cover;
+}
+
+.reviews__text {
+  max-width: 793px;
+  margin: 0 auto 40px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #848fac;
+}
+
+.reviews__caption {
+  margin: 0 auto 24px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #192252;
+}
+
+@media (max-width: 1340px) {
+  .reviews {
+    padding: 60px 0 60px;
+    margin: 0 90px;
+  }
+}
+
+@media (max-width: 1072px) {
+  .reviews {
+    padding: 30px 0 30px;
+    margin: 0 60px;
+  }
+}
+
+@media (max-width: 886px) {
+  .reviews {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    margin: 0 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  .reviews {
+    margin: 0 10px;
+  }
+  .reviews__title {
+    margin-bottom: 20px;
+  }
+  .reviews__photo {
+    margin-bottom: 20px;
+  }
+  .reviews__text {
+    margin-bottom: 20px;
+  }
+}
+
+.footer {
+  padding: 120px;
+  background-color: #0b265a;
+}
+
+.footer__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__column {
+  margin-right: 23px;
+}
+
+.footer__column:first-of-type {
+  flex: auto;
+}
+
+.footer__nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__title {
+  margin: 0 0 13px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.footer__text {
+  max-width: 186px;
+  margin: 0 0 36px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: #d9dbde;
+}
+
+.footer__links {
+  margin: 0 81px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 95px;
+  row-gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer__link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.footer__link:only-child {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #d9dbde;
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.social {
+}
+
+.social__list {
+  max-width: 144px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.social__link {
+  width: 32px;
+  height: 32px;
+}
+
+.social__image {
+}
+
+@media (max-width: 1340px) {
+  .footer {
+    padding: 60px 90px 60px;
+  }
+}
+
+@media (max-width: 1072px) {
+  .footer {
+    padding: 60px 60px 30px;
+  }
+}
+
+@media (max-width: 886px) {
+  .footer {
+    padding: 30px;
+  }
+  .footer__wrapper {
+    flex-wrap: wrap;
+  }
+  .footer__column {
+    order: 3;
+  }
+
+  .footer__links {
+    margin: 0;
+    order: 2;
+  }
+
+  .footer__column:first-of-type {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 18px;
+  }
+  .footer__links {
+    flex-direction: column;
+    width: 50%;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer {
+    padding: 30px 10px;
+  }
+  .footer__wrapper {
+    flex-direction: column;
+  }
+  .footer__column {
+    margin-top: 30px;
+  }
+  .footer__links {
+    width: 100%;
+    gap: 0;
+  }
+  .footer__nav {
+    gap: 10px;
   }
 }
