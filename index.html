@@ -15,9 +15,9 @@
         <h2 class="header__logo">HotelBooking</h2>
         <nav class="header__nav">
           <ul class="header__menu-list">
-            <lu><a href="#" class="header__menu-item">Дома</a></lu>
-            <lu><a href="#" class="header__menu-item">Бронирование</a></lu>
-            <lu><a href="#" class="header__menu-item">Контакты</a></lu>
+            <lu><a href="#" class="header__menu-item" target="_blank">Дома</a></lu>
+            <lu><a href="#" class="header__menu-item" target="_blank">Бронирование</a></lu>
+            <lu><a href="#" class="header__menu-item" target="_blank">Контакты</a></lu>
           </ul>
         </nav>
         <form class="purchase" action="index.html">
@@ -123,18 +123,18 @@
                 alt="гостиная с зеркальным шкафом"
                 class="interior__image"
               />
-              <ul class="interior__slider">
+              <ul class="switcher switcher_position_absolute switcher_placed_bottom-center">
                 <li>
                   <input
                     type="radio"
-                    class="interior__slider-dot"
+                    class="switcher__dot switcher__dot_theme_light"
                     name="interior__slider"
                   />
                 </li>
                 <li>
                   <input
                     type="radio"
-                    class="interior__slider-dot"
+                    class="switcher__dot switcher__dot_theme_light"
                     name="interior__slider"
                     checked="checked"
                   />
@@ -142,14 +142,14 @@
                 <li>
                   <input
                     type="radio"
-                    class="interior__slider-dot"
+                    class="switcher__dot switcher__dot_theme_light"
                     name="interior__slider"
                   />
                 </li>
                 <li>
                   <input
                     type="radio"
-                    class="interior__slider-dot"
+                    class="switcher__dot switcher__dot_theme_light"
                     name="interior__slider"
                   />
                 </li>
@@ -172,8 +172,150 @@
             />
           </div>
         </section>
+        <section class="reservation">
+          <h2 class="reservation__title">Выберите ваш дом</h2>
+          <p class="reservation__offer-text">
+            У нас есть дома для любых мероприятий. Для большой компании у нас
+            есть двухэтажный дом на самом краю леса.
+          </p>
+          <form class="purchase" action="index.html">
+            <button class="purchase__button">Подробнее</button>
+          </form>
+          <ul class="reservation__cards">
+            <li class="product">
+              <img
+                src="./images/reservation/reservation__card_image_1.jpg"
+                alt="маленький домик"
+                class="product__image"
+              />
+              <div class="product__text-block">
+                <h3 class="product__title">Маленький домик</h3>
+                <p class="product__offer-text">
+                  Уютный коттедж с 3 спальнями и бильярдом
+                </p>
+                
+              </div>
+              <a href="#" class="product__link" target="_blank">Подробнее</a>
+            </li>
+            <li class="product">
+              <img
+                src="./images/reservation/reservation__card_image_2.jpg"
+                alt="большой дом"
+                class="product__image"
+              />
+              <div class="product__text-block">
+                <h3 class="product__title">Большой дом</h3>
+                <p class="product__offer-text">
+                  266 кв.м. с тремя спальнями, четырьмя санузлами, камином и
+                  бильярдом.
+                </p>
+                
+              </div>
+              <a href="#" class="product__link" target="_blank">Подробнее</a>
+            </li>
+            <li class="product">
+              <img
+                src="./images/reservation/reservation__card_image_3.jpg"
+                alt="двухэтажный дом"
+                class="product__image"
+              />
+              <div class="product__text-block">
+                <h3 class="product__title">Двухэтажный дом</h3>
+                <p class="product__offer-text">
+                  Коттедж с сауной, четырьмя спальнями и бильярдом. Идеально
+                  подойдет для полноценного празднования нового года.
+                </p>
+                
+              </div>
+              <a href="#" class="product__link" target="_blank">Подробнее</a>
+            </li>
+          </ul>
+        </section>
+        <section class="reviews">
+          <h2 class="reviews__title">Отзывы</h2>
+          <img src="./images/reviews/reviews__photo.jpg" alt="довольный клиент" class="reviews__photo">
+          <p class="reviews__text">Мы очень долго искали коттедж, чтобы отметить день рождение. Все очень понравилось. Комфортно, уютно,не дом, а сказка. Все очень понравилось,, хочется приехать еще сюда не один раз</p>
+          <p class="reviews__caption">Ирина Иванова</p>
+          <ul class="switcher switcher_position_relative">
+            <li>
+              <input
+                type="radio"
+                class="switcher__dot"
+                name="reviews__slider"
+              />
+            </li>
+            <li>
+              <input
+                type="radio"
+                class="switcher__dot"
+                name="reviews__slider"
+                checked="checked"
+              />
+            </li>
+            <li>
+              <input
+                type="radio"
+                class="switcher__dot"
+                name="reviews__slider"
+              />
+            </li>
+            <li>
+              <input
+                type="radio"
+                class="switcher__dot"
+                name="reviews__slider"
+              />
+            </li>
+          </ul>
+        </div>
+        </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__wrapper">
+        <div class="footer__column">
+          <h2 class="footer__title">HotelBooking</h2>
+          <p class="footer__text">Загородный отдых с замечательными видами</p>
+          <nav class="social">
+            <ul class="social__list">
+              <li><a href="#" class="social__link" target="_blank"><img src="./images/social/twitter.png" alt="twitter" class="social__image"></a></li>
+              <li><a href="#" class="social__link" target="_blank"><img src="./images/social/instagram.png" alt="instagram-logo" class="social__image"></a></li>
+              <li><a href="#" class="social__link" target="_blank"><img src="./images/social/facebook.png" alt="facebook" class="social__image"></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__links">
+          <div class="footer__column">
+            <nav>
+              <ul class="footer__nav">
+                <li class="footer__link">Дома</li>
+                <li><a href="#" class="footer__link" target="_blank">Маленький домик</a></li>
+                <li><a href="#" class="footer__link" target="_blank">Большой дом</a></li>
+                <li><a href="#" class="footer__link" target="_blank">Двухэтажный дом</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__column">
+            <nav>
+              <ul class="footer__nav">
+                <li class="footer__link">Бронирование</li>
+                <li><a href="#" class="footer__link" target="_blank">Оформление</a></li>
+                <li><a href="#" class="footer__link" target="_blank">Оплата</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer__column">
+          <address>
+            <ul class="footer__nav">
+              <li class="footer__link">Contact</li>
+              <li><a href="tel:88005553535" class="footer__link" target="_blank">8-800-555-35-35</a></li>
+              <li><a href="mailto:webmaster@example.com" class="footer__link" target="_blank">email@yandex.ru</a></li>
+              <li><a href="https://yandex.ru/maps/geo/derevnya_kimzha/53125670/?ll=44.605019%2C65.570604&z=14.83" class="footer__link" target="_blank">Деревня Кимжа</a></li>
+            </ul>
+          </address>
+        </div>
+      </div>
+      </footer>
     </div>
   </body>
 </html>
