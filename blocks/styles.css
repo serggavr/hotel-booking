@@ -988,6 +988,12 @@
   .footer__column {
     order: 3;
   }
+  /* .social {
+    margin-bottom: 30px;
+  } */
+  .footer__column:first-of-type {
+    margin-bottom: 30px;
+  }
 
   .footer__links {
     margin: 0;
@@ -1006,6 +1012,9 @@
   .footer__links {
     flex-direction: column;
     width: 50%;
+  }
+  .footer__column:first-of-type {
+    margin-bottom: 0;
   }
 }
 
