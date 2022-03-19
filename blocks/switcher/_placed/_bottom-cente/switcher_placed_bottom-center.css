@@ -1,0 +1,10 @@
+.switcher_placed_bottom-center {
+  bottom: 4.7%;
+  right: calc(50% - 36px);
+}
+
+@media (max-width: 560px) {
+  .switcher_placed_bottom-center {
+    display: none;
+  }
+}

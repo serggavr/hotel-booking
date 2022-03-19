@@ -1,0 +1,37 @@
+.benefit {
+  padding-top: 80px;
+  margin: 0 120px 80px;
+  row-gap: 32px;
+}
+
+@media (max-width: 1340px) {
+  .benefit {
+    padding-top: 60px;
+    margin: 0 90px 60px;
+  }
+}
+
+@media (max-width: 1072px) {
+  .benefit {
+    padding-top: 30px;
+    margin: 0 60px 32px;
+  }
+}
+
+@media (max-width: 886px) {
+  .benefit {
+    margin: 0 30px 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefit {
+    margin: 0 18px 32px;
+  }
+}
+
+@media (max-width: 560px) {
+  .benefit {
+    margin: 0 10px 32px;
+  }
+}

@@ -1,0 +1,9 @@
+.social__list {
+  max-width: 144px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}

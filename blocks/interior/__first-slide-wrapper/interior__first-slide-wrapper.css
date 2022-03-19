@@ -1,0 +1,18 @@
+.interior__first-slide-wrapper {
+  grid-row: 1 / 4;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .interior__first-slide-wrapper {
+    grid-row: 1;
+    grid-column: 1 / 4;
+  }
+}
+
+@media (max-width: 560px) {
+  .interior__first-slide-wrapper {
+    grid-row: 1;
+    grid-column: 1;
+  }
+}

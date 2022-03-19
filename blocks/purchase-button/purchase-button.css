@@ -1,0 +1,27 @@
+.purchase-button {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
+  background-color: #0e1734;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  align-self: flex-start;
+  transition: opacity 0.3s ease-in-out 0.1s;
+}
+
+.purchase-button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .purchase-button {
+    align-self: center;
+  }
+}

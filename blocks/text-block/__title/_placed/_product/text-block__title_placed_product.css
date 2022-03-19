@@ -1,0 +1,10 @@
+.text-block__title_placed_product {
+  color: #000000;
+  font-size: 24px;
+}
+
+@media (max-width: 1340px) {
+  .text-block__title_placed_product {
+    font-size: 22px;
+  }
+}

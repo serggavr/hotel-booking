@@ -1,0 +1,15 @@
+.interior {
+  padding-top: 80px;
+}
+
+@media (max-width: 1340px) {
+  .interior {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 1072px) {
+  .interior {
+    padding-top: 30px;
+  }
+}

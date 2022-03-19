@@ -1,0 +1,29 @@
+.footer__links {
+  margin: 0 72px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 72px;
+  row-gap: 40px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 886px) {
+  .footer__links {
+    margin: 0;
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__links {
+    flex-direction: column;
+    width: 50%;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer__links {
+    width: 100%;
+    gap: 0;
+  }
+}
