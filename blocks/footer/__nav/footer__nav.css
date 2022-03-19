@@ -7,7 +7,7 @@
   list-style: none;
 }
 
-@media (max-width: 1072px) {
+@media (max-width: 1200px) {
   .footer__nav {
     min-width: 150px;
   }
