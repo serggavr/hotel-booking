@@ -1,0 +1,30 @@
+.first__offer-text {
+  max-width: 485px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #848fac;
+}
+
+@media (max-width: 886px) {
+  .first__offer-text {
+    max-width: 295px;
+  }
+}
+
+@media (max-width: 768px) {
+  .first__offer-text {
+    max-width: 375px;
+    margin: 12px auto 18px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  .first__offer-text {
+    max-width: 310px;
+    font-size: 16px;
+  }
+}

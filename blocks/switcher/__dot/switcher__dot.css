@@ -1,0 +1,19 @@
+.switcher__dot {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  display: block;
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(250, 176, 71, 0.35);
+  border-radius: 50%;
+}
+
+.switcher__dot:checked {
+  width: 12px;
+  height: 12px;
+  background-color: #fab047;
+}

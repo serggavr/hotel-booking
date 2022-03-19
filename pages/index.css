@@ -1,10 +1,102 @@
+/* normalize */
 @import url("../vendor/normalize.css");
+
+/* fonts */
 @import url("../vendor/fonts.css");
 @import url("../vendor/fonts.css");
 
-/* // */
-@import url("../blocks/styles.css");
-/* // */
+/* body */
+@import url("../blocks/body/body.css");
 
-/* @import url("../blocks/body/body.css"); */
-/* @import url("../blocks/page/page.css"); */
+/* page */
+@import url("../blocks/page/page.css");
+
+/* header */
+@import url("../blocks/header/header.css");
+@import url("../blocks/header/__logo/header__logo.css");
+@import url("../blocks/header/__menu-item/header__menu-item.css");
+@import url("../blocks/header/__menu-list/header__menu-list.css");
+@import url("../blocks/header/__nav/header__nav.css");
+
+/* purchase-button */
+@import url("../blocks/purchase-button/purchase-button.css");
+@import url("../blocks/purchase-button/_placed/_header/purchase-button_placed_header.css");
+
+/* text-block */
+@import url("../blocks/text-block/text-block.css");
+@import url("../blocks/text-block/_placed/_center/text-block__placed_center.css");
+@import url("../blocks/text-block/_placed/_reviews/text-block_placed_reviews.css");
+@import url("../blocks/text-block/__title/text-block__title.css");
+@import url("../blocks/text-block/__title/_placed/_product/text-block__title_placed_product.css");
+@import url("../blocks/text-block/__title/_margin-size/_l/text-block__title_margin-size_l.css");
+@import url("../blocks/text-block/__title/_margin-size/_m/text-block__title_margin-size_m.css");
+@import url("../blocks/text-block/__title/_margin-size/_s/text-block__title_margin-size_s.css");
+@import url("../blocks/text-block/__title/_margin-size/_xl/text-block__title_margin-size_xl.css");
+@import url("../blocks/text-block/__title/_margin-size/_xxl/text-block__title_margin-size_xxl.css");
+@import url("../blocks/text-block/__offer-text/text-block__offer-text.css");
+@import url("../blocks/text-block/__offer-text/_placed/_reviews/text-block__offer-text_placed_reviews.css");
+@import url("../blocks/text-block/__offer-text/_margin-size/_l/text-block__offer-text_margin-size_l.css");
+@import url("../blocks/text-block/__offer-text/_margin-size/_m/text-block__offer-text_margin-size_m.css");
+@import url("../blocks/text-block/__offer-text/_margin-size/_s/text-block__offer-text_margin-size_s.css");
+@import url("../blocks/text-block/__offer-text/_margin-size/_xl/text-block__offer-text_margin-size_xl.css");
+@import url("../blocks/text-block/__photo/text-block__photo.css");
+@import url("../blocks/text-block/__caption/text-block__caption.css");
+
+/* first */
+@import url("../blocks/first/first.css");
+@import url("../blocks/first/__text-block/first__text-block.css");
+@import url("../blocks/first/__title/first__title.css");
+@import url("../blocks/first/__offer-text/first__offer-text.css");
+@import url("../blocks/first/__image/first__image.css");
+
+/* about-us */
+@import url("../blocks/about-us/about-us.css");
+
+/* card */
+@import url("../blocks/card/card.css");
+@import url("../blocks/card/__image/card__image.css");
+@import url("../blocks/card/__image/_direction/_reverse/card__image_direction_reverse.css");
+
+/* benefit */
+@import url("../blocks/benefit/benefit.css");
+
+/* interior */
+@import url("../blocks/interior/interior.css");
+@import url("../blocks/interior/__images/interior__images.css");
+@import url("../blocks/interior/__first-slide-wrapper/interior__first-slide-wrapper.css");
+@import url("../blocks/interior/__image/interior__image.css");
+
+/* switcher */
+@import url("../blocks/switcher/switcher.css");
+@import url("../blocks/switcher/_placed/_bottom-cente/switcher_placed_bottom-center.css");
+@import url("../blocks/switcher/_position/_absolute/switcher_position_absolute.css");
+@import url("../blocks/switcher/__dot/switcher__dot.css");
+@import url("../blocks/switcher/__dot/_theme/_light/switcher__dot_theme_light.css");
+
+/* reservation */
+@import url("../blocks/reservation/reservation.css");
+@import url("../blocks/reservation/__cards/reservation__cards.css");
+
+/* product */
+@import url("../blocks/product/product.css");
+@import url("../blocks/product/__image/product__image.css");
+@import url("../blocks/product/__link/product__link.css");
+
+/* reviews */
+@import url("../blocks/reviews/reviews.css");
+
+/* footer */
+@import url("../blocks/footer/footer.css");
+@import url("../blocks/footer/__wrapper/footer__wrapper.css");
+@import url("../blocks/footer/__column/footer__column.css");
+@import url("../blocks/footer/__links/footer__links.css");
+@import url("../blocks/footer/__link/footer__link.css");
+@import url("../blocks/footer/__nav/footer__nav.css");
+@import url("../blocks/footer/__title/footer__title.css");
+@import url("../blocks/footer/__text/footer__text.css");
+
+/* social */
+@import url("../blocks/social/social.css");
+@import url("../blocks/social/__list/social__list.css");
+@import url("../blocks/social/__link/social__link.css");
+@import url("../blocks/social/__image/social__image.css");

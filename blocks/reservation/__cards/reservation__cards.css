@@ -1,0 +1,27 @@
+.reservation__cards {
+  margin: 88px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 1072px) {
+  .reservation__cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .reservation__cards {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 560px) {
+  .reservation__cards {
+    gap: 30px;
+  }
+}

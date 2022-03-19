@@ -1,0 +1,7 @@
+.social__image {
+  transition: opacity 0.3s ease-in-out 0.1s;
+}
+
+.social__image:hover {
+  opacity: 0.2;
+}

@@ -1,0 +1,5 @@
+.text-block__photo {
+  margin: 0 0 44px;
+  max-width: 120px;
+  object-fit: cover;
+}

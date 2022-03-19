@@ -1,0 +1,9 @@
+.text-block__caption {
+  margin: 0 0 24px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #192252;
+}

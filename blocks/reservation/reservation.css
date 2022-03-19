@@ -1,0 +1,37 @@
+.reservation {
+  padding-top: 80px;
+  margin: 0 120px 80px;
+  text-align: center;
+}
+
+@media (max-width: 1340px) {
+  .reservation {
+    padding-top: 60px;
+    margin: 0 90px 60px;
+  }
+}
+
+@media (max-width: 1072px) {
+  .reservation {
+    padding-top: 30px;
+    margin: 0 60px 32px;
+  }
+}
+
+@media (max-width: 886px) {
+  .reservation {
+    margin: 0 30px 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reservation {
+    margin: 0 18px 32px;
+  }
+}
+
+@media (max-width: 560px) {
+  .reservation {
+    margin: 0 10px 32px 10px;
+  }
+}
