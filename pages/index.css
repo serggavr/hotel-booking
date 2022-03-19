@@ -27,14 +27,16 @@
 
 /* text-block */
 @import url("../blocks/text-block/text-block.css");
-@import url("../blocks/text-block/_placed/_center/text-block__placed_center.css");
+@import url("../blocks/text-block/_placed/_center/text-block_placed_center.css");
 @import url("../blocks/text-block/_placed/_reviews/text-block_placed_reviews.css");
+@import url("../blocks/text-block/_placed/_card/text-block_placed_card.css");
+@import url("../blocks/text-block/_placed/_reservation/text-block_placed_reservation.css");
 @import url("../blocks/text-block/__title/text-block__title.css");
 @import url("../blocks/text-block/__title/_placed/_product/text-block__title_placed_product.css");
+@import url("../blocks/text-block/__title/_placed/_interior/text-block__title_placed_interior.css");
 @import url("../blocks/text-block/__title/_margin-size/_l/text-block__title_margin-size_l.css");
 @import url("../blocks/text-block/__title/_margin-size/_m/text-block__title_margin-size_m.css");
 @import url("../blocks/text-block/__title/_margin-size/_s/text-block__title_margin-size_s.css");
-@import url("../blocks/text-block/__title/_margin-size/_xl/text-block__title_margin-size_xl.css");
 @import url("../blocks/text-block/__title/_margin-size/_xxl/text-block__title_margin-size_xxl.css");
 @import url("../blocks/text-block/__offer-text/text-block__offer-text.css");
 @import url("../blocks/text-block/__offer-text/_placed/_reviews/text-block__offer-text_placed_reviews.css");
