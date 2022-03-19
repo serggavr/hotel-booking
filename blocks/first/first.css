@@ -1,4 +1,5 @@
 .first {
+  margin-bottom: 16px;
   display: grid;
   justify-content: space-between;
   column-gap: 24px;

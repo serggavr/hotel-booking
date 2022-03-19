@@ -4,9 +4,9 @@
   column-gap: 126px;
 }
 
-.card:not(:first-child) {
+/* .card:not(:first-child) {
   margin-top: 32px;
-}
+} */
 
 @media (max-width: 1340px) {
   .card {
