@@ -1,3 +1,6 @@
+.interior__first-slide-wrapper:hover {
+  opacity: none;
+}
 .interior__first-slide-wrapper {
   grid-row: 1 / 4;
   position: relative;
