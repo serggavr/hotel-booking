@@ -1,38 +1,5 @@
 .reviews {
-  padding: 80px 0 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-@media (max-width: 1340px) {
-  .reviews {
-    padding: 60px 0 60px;
-    margin: 0 90px;
-  }
-}
-
-@media (max-width: 1072px) {
-  .reviews {
-    padding: 30px 0 30px;
-    margin: 0 60px;
-  }
-}
-
-@media (max-width: 886px) {
-  .reviews {
-    margin: 0 30px;
-  }
-}
-
-@media (max-width: 768px) {
-  .reviews {
-    margin: 0 18px;
-  }
-}
-
-@media (max-width: 560px) {
-  .reviews {
-    margin: 0 10px;
-  }
 }
