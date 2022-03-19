@@ -1,9 +1,9 @@
 .interior__images {
   max-height: 585.5px;
   display: grid;
-  grid-template-columns: minmax(75%, 1090px) minmax(25%, 344px);
+  grid-template-columns: minmax(75%, 1090px) minmax(23%, 344px);
   grid-template-rows: repeat(3, minmax(auto, 33%));
-  gap: 2px;
+  gap: 3px;
 }
 
 @media (max-width: 768px) {
