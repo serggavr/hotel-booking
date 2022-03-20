@@ -2,3 +2,9 @@
   margin-bottom: 27px;
   margin-right: 115px;
 }
+
+@media (max-width: 768px) {
+  .text-block__title_placed_interior {
+    margin-right: 0;
+  }
+}
