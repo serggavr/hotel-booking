@@ -2,6 +2,9 @@
 
 ## Дополнительная (конкурсная) проектная работа
 
+Ссылка на GithubPages:
+https://serggavr.github.io/hotel-booking/
+
 Ссылка на работу:
 https://github.com/serggavr/hotel-booking
 
